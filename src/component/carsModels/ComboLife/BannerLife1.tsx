@@ -1,11 +1,11 @@
-import { Dispatch, FormEvent, SetStateAction } from 'react'
+import { Dispatch, FormEvent, SetStateAction, SyntheticEvent } from 'react'
 import banner from '/public/images/modelBannerLife.png'
 import miniBanner from '/public/images/b.jpeg'
 import zafira from '/public/images/models/0.jpg';
 
-export function BannerLife() {
+export function BannerLife({ setShowModal }: { setShowModal: Dispatch<SetStateAction<boolean>> }) {
 
-    function showModal({ setShowModal }: { setShowModal: Dispatch<SetStateAction<boolean>> }) {
+    function showModal(event: SyntheticEvent) {
         event.preventDefault()
         setShowModal(true)
     }

@@ -2,10 +2,10 @@ import Link from "next/link";
 import styles from "./Menu.module.css";
 import banner from '/public/images/label.png'
 
-const hundler = (event) => {
-  console.log('Click');
-  event.preventDefault()
-}
+// const hundler = (event) => {
+//   console.log('Click');
+//   event.preventDefault()
+// }
 export  function Menu() {
   return <nav>
    

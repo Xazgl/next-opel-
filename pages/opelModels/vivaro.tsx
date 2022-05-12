@@ -22,8 +22,8 @@ const VivaroPage: NextPage = () => {
           <BarMenu />
           <BannerVivaro setShowModal={setShowModal} />
           <PurchaseMethods setShowModal={setShowModal} />
-          <TextVivaro />
-          <Footer  />
+          <TextVivaro  setShowModal={setShowModal} />
+          <Footer  /> 
           {
         showModal && <Modal showModal={showModal} setShowModal={setShowModal} />
       }

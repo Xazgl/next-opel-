@@ -22,10 +22,9 @@ services:
     image: postgres:latest
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: user12345
-      MYSQL_DATABASE: "${DB_NAME}"
-      MYSQL_USER: "${DB_USER}"
-      MYSQL_PASSWORD: "${DB_PASS}"
+     POSTGRES_USER=dbuser
+     POSTGRES_PASSWORD=user12345
+     POSTGRES_DB=development_db
     ports:
        - "5432:5432"
     volumes:

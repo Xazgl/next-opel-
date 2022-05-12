@@ -50,6 +50,7 @@ export default function Gallery() {
               <img
                 src={`${item.img}?w=248&fit=crop&auto=format`}
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                //@ts-ignore
                 alt={item.title}
                 loading="lazy"
                 onClick={() => {
